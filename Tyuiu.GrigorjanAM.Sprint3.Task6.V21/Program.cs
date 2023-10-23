@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.GrigorjanAM.Sprint3.Task5.V8.Lib;
+using Tyuiu.GrigorjanAM.Sprint3.Task6.V21.Lib;
 
-namespace Tyuiu.GrigorjanAM.Sprint3.Task5.V8
+namespace Tyuiu.GrigorjanAM.Sprint3.Task6.V21
 {
     class Program
     {
@@ -16,35 +16,28 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task5.V8
             Console.Title = "Спринт #3 | Выполнил: Григорян А. М. | ИИПб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
-            Console.WriteLine("* Тема: Вложенные циклы                                                   *");
-            Console.WriteLine("* Задание #5                                                              *");
-            Console.WriteLine("* Вариант #8                                                              *");
+            Console.WriteLine("* Тема: Обработка целочисленной информации                                *");
+            Console.WriteLine("* Задание #6                                                              *");
+            Console.WriteLine("* Вариант #21                                                             *");
             Console.WriteLine("* Выполнил: Григорян Арсен Мовсесович | ИИПб-23-3                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, вычисляющую сумму сумм по данной формуле.           *");
+            Console.WriteLine("* Напишите программу, которая ищет среди целых чисел, принадлежащих       *");
+            Console.WriteLine("* числовому отрезку [19, 30] сумму всех делителей                         *");
 
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-
-            int startValue = 1;
-            int stopValue = 3;
-            int startValue2 = 1;
-            int stopValue2 = 12;
-
-
-
-
-
+            int startvalue = 19;
+            int stopvalue = 30;
 
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.GetSumSumSeries(startValue, startValue2, stopValue, stopValue2));
+            Console.WriteLine("Сумма всех делителей на отрезке [19,30] = " + ds.GetSumTheDivisors(startvalue, stopvalue));
             Console.ReadKey();
         }
     }
