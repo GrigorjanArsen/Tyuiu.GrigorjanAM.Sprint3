@@ -5,16 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tyuiu.GrigorjanAM.Sprint3.Task7.V14.Lib;
 
-public static class Extensions
-{
-    public static T[] Append<T>(this T[] array, T item)
-    {
-        List<T> list = new List<T>(array);
-        list.Add(item);
 
-        return list.ToArray();
-    }
-}
 namespace Tyuiu.GrigorjanAM.Sprint3.Task7.V14
 {
     class Program
