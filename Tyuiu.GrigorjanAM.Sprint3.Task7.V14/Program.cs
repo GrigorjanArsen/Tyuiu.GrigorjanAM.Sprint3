@@ -5,6 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Tyuiu.GrigorjanAM.Sprint3.Task7.V14.Lib;
 
+public static class Extensions
+{
+    public static T[] Append<T>(this T[] array, T item)
+    {
+        List<T> list = new List<T>(array);
+        list.Add(item);
+
+        return list.ToArray();
+    }
+}
 namespace Tyuiu.GrigorjanAM.Sprint3.Task7.V14
 {
     class Program
@@ -44,16 +54,10 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task7.V14
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("+-----------+-----------+");
-            Console.WriteLine("|     X     |    f(x)   |");
-            Console.WriteLine("+-----------+-----------+");
-            for(int i = 0; i <=len-1; i++)
-            {
-                Console.WriteLine("|{0,6:d}     |  {1,6:f2}   |", startvalue, valueArray[i]);
-                startvalue++;
-            }
-            Console.WriteLine("+-----------+-----------+");
+            Console.WriteLine("[{0}]", string.Join(", ", valueArray));
+
             Console.ReadKey();
+
 
         }
     }
