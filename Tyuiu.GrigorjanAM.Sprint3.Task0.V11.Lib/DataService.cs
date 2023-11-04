@@ -10,7 +10,7 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task0.V11.Lib
 {
     public class DataService : ISprint3Task0V11
     {
-        public double GetSumSeries(double value, int startValue, int stopValue)
+        public double GetSumSeries(int value, int startValue, int stopValue)
         {
             double sumSeries = 0;
             int i;
@@ -18,9 +18,8 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task0.V11.Lib
             {
                 sumSeries += (1 / Math.Pow(value, i)) * (1 / Math.Pow(value, i));
             }
-            
-            return Math.Round(sumSeries, 3);
 
+            return Math.Round(sumSeries, 3);
         }
     }
 }

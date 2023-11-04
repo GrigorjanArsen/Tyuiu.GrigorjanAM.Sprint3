@@ -12,7 +12,7 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task0.V11.Test
         {
             DataService ds = new DataService();
 
-            double value = 5;
+            int value = 5;
             int k1 = 1;
             int k2 = 10;
             double res = ds.GetSumSeries(value, k1, k2);

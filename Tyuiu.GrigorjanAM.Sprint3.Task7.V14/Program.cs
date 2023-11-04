@@ -44,7 +44,12 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task7.V14
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            //double[] mas = ds.GetMassFunction(startvalue, stopvalue);
+            //for (int i = 0; i < mas.Length; i++)
+            //{
+            //    Console.Write(mas[i]+",");
+            //}
+            //Console.WriteLine();
             Console.WriteLine("[{0}]", string.Join(", ", valueArray));
 
             Console.ReadKey();

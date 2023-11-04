@@ -11,10 +11,10 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task1.V12.Test
         public void ValidGetMultiplySeries()
         {
             DataService ds = new DataService();
-            double value = 5;
+            int value = 5;
             int k1 = 1;
             int k2 = 10;
-            double res = ds.GetMultiplySeries(value, k1, k2);
+            double res = ds.GetSumSeries(value, k1, k2);
             double wait = 1.001;
             Assert.AreEqual(wait, res);
 

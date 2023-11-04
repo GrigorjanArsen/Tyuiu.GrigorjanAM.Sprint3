@@ -29,7 +29,7 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task1.V12
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            double value = 5;
+            int value = 5;
             int startValue = 1;
             int stopValue = 10;
 
@@ -40,7 +40,7 @@ namespace Tyuiu.GrigorjanAM.Sprint3.Task1.V12
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма ряда = " + ds.GetMultiplySeries(value, startValue, stopValue));
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSeries(value, startValue, stopValue));
 
             Console.ReadKey();
         }
